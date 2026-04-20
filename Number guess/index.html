@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 agustus 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Number guess >:P</h1>
+    <div class="container">
+    <input type="number" id="angka">
+    <button onclick="tebak()" id="tebak" >tebak</button>
+    <P>hasil : <br><span id="hasil"></span></P>
+    </div>
+
+    <script>
+
+        let komputer = Math.floor(Math.random()*10)+1;
+        function tebak(){
+            let angka = parseFloat(document.getElementById('angka').value);
+            if(komputer === angka){
+            document.getElementById('hasil').innerHTML = 'Kamu berhasil menebak angkanya :D'
+            document.getElementById('tebak').disabled = true;
+        }else if(komputer < angka){
+            document.getElementById('hasil').innerHTML = 'Angka yang ditebak terlalu besar :<'
+        }else{
+            document.getElementById('hasil').innerHTML = 'Angka yang ditebak terlalu kecil :('
+        }
+    }
+        
+    </script>
+</body>
+</html>

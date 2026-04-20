@@ -1,0 +1,58 @@
+.bungkus {
+    background-color: white;
+    width: 900px;
+    height: 500px;
+    margin-left: 170px;
+    border-radius: 30px;
+}
+
+body{
+    background-color: gray;
+}
+
+h2 {
+    margin-bottom: 40px;
+    margin-left: 340px;
+}
+
+h5{
+    color: white;
+}
+
+#nama {
+    /* border: none; */
+    margin-left: 20px;
+    width: 500px;
+    height: 40px;
+}
+
+#nilai {
+    /* border: none; */
+    margin-left: 20px;
+    width: 360px;
+    height: 40px;
+}
+
+#kehadiran {
+    /* border: none; */
+    margin-left: 20px;
+    width: 360px;
+    height: 40px;
+}
+
+button {
+    margin-left: 350px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    color: gray;
+    border-radius: 20px;
+}
+
+table {
+    margin-left: 30px;
+}
+
+.rata-rata {
+    margin-left: 30px;
+}

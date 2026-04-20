@@ -1,0 +1,859 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    color: aliceblue;
+}
+
+
+nav{
+    padding: 10px 0; /* top dan bottom padding = 10px, left dan right padding = 0 */
+    padding-left: 6%;
+    padding-right: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 60px;
+    color: #091270; 
+    margin-left: 200px;
+}
+
+.navbar {
+    width: 100%;
+    height: 11vh;
+    background-color: white;
+    /* background: linear-gradient(45deg, hsl(210, 100%, 96%), #ddddff ); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0px 25px 15px 0 rgba(0, 0, 4, 0.1);
+}
+
+.menu {
+    margin-right: 100px;
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.menu li a {
+    font-size: 10pt;
+    color: rgb(9, 12, 110);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    /* height: 100vh;
+    width: 100%; */
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+#Home {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+}
+
+.PlaceHolder {
+    width: 350px;
+    height: 340px;
+    margin-left: 700px;
+    margin-top: -70px;
+    border-radius: 20%;
+}
+
+.text {
+    color: #091270;
+    margin-left: 90px;
+    margin-top: -230px;
+}
+
+.text h2 {
+    font-size: 30px;
+}
+
+#hats {
+    border: none;
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: linear-gradient(80deg, blue, purple);
+    color: white;
+    font-weight: bold;
+    box-shadow: -5px 0px 20px 0 rgba(5, 0, 255, 0.2);
+    cursor: pointer;
+}
+
+#Hats {
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: white;
+    border-color: blue;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    box-shadow: -5px 0px 20px 0 rgba(5, 0, 255, 0.2);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#About {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+}
+
+.JstDVagain {
+    width: 350px;
+    height: 340px;
+    margin-left: -190px;
+    border-radius: 20%;
+}
+
+.user {
+    width: 350px;
+    margin-left: 70px;
+}
+
+.user h3 {
+    font-size: 30px;
+    color: black;
+}
+
+.user h5 {
+    font-size: 15px;
+    color: black;
+    font-weight: lighter;
+}
+
+#User {
+    border: none;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: linear-gradient(80deg, blue, purple);
+    color: white;
+    font-weight: bold;
+    box-shadow: -5px 15px 20px 0 rgba(10, 0, 255, 0.2);
+    cursor: pointer;
+}
+
+#Services {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+}
+
+.datagen {
+    /* background: red; */
+    width: 1150px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.datagen h3 {
+    color: black;
+    font-size: 27px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 70px;
+}
+
+.datagen h6 {
+    color: rgb(86, 86, 86);
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.datagen h5 {
+    color: rgb(86, 86, 86);
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.HeComes {
+    width: 170px;
+    height: 190px;
+    background-color: #ddddff;
+    cursor: pointer;
+}
+
+
+.nepy {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 20px;
+    /* background-color: blanchedalmond; */
+}
+
+.nomatterhowfar {
+    height : 70vh;
+    width : 90vw;
+    /* display: flex; */
+    justify-content: space-evenly;
+    /* align-items: start; */
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+
+}
+
+
+#Portfolio {
+    background-color: rgb(255, 255, 255);
+    height: 1250px;
+    width: 100%;
+}
+
+.seed {
+    /* background-color: aqua; */
+    width: 800px;
+    height: 1060px;
+    margin-top: 50px;
+}
+
+.seed h1{
+    color: black;
+    font-size: 27px;
+}
+
+.growth {
+    font-size: 10px;
+    color: rgb(45, 45, 45);
+    display: flex;
+    align-items: start; 
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    margin-top: 70px;
+    width:400px;
+}
+
+.growth p {
+    font-weight: bolder;
+}
+
+.Niko {
+    margin-top: 25px;
+    width: 260px;
+    height: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hoax {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hoax h4 {
+    color: rgb(38, 38, 38);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.remains {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: start; 
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+} 
+
+#Client {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+}
+
+.shopkeeper h3 {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+}
+
+.shopkeeper h6 {
+    color: rgb(76, 76, 76);
+    font-weight: lighter;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.huh {
+    width: 60px;
+    height:60px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.yeahh {
+    box-shadow: -5px 9px 20px 0 rgba(86, 85, 117, 0.2);
+    background-color: #ffffff;
+    width: 200px;
+    height:70px;
+    /* align-items: start;  */
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.left {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: start; 
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* grid-template-rows: repeat(3, auto); */
+    gap: 10px;
+}
+
+.yeahh h6 {
+    color :black;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.yeahh h5 {
+    color :black;
+    font-size: 15px;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+#Contact {
+    background-color: rgb(255, 255, 255);
+    height: 140vh;
+    width: 100%;
+}
+
+.communication {
+    width: 800px;
+    height: 400px;
+    background: linear-gradient(90deg, rgb(87, 40, 196), rgb(131, 55, 188)), rgb(172, 128, 220);
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.communication h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.communication h6 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.communication input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.communication input::placeholder {
+    color: white;
+}
+
+.input-button-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#idrkman {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size:12px;
+    cursor: pointer;
+    box-shadow: -5px 0px 20px 0 rgba(5, 0, 255, 0.2);
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.zipbidibap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#Contact h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#Contact h4 {
+    color: rgb(178, 178, 178);
+    font-size: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#Contact h5 {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 100px;
+        font-size: 13px;
+    }
+    
+    .menu {
+        margin-right: 50px;
+    }
+    
+    .menu li {
+        margin-left: 12px;
+    }
+    
+    .menu li a {
+        font-size: 9pt;
+    }
+    
+    .PlaceHolder {
+        margin-left: 300px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .text {
+        margin-left: 50px;
+        padding: 10px;
+        line-height: 1.6;
+    }
+    
+    .text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .user {
+        width: 300px;
+        padding: 10px;
+        line-height: 1.6;
+    }
+    
+    .user h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .JstDVagain {
+        margin-left: -100px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .nomatterhowfar {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    
+    .left {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    
+    .communication {
+        width: 600px;
+        height: 350px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        margin-top: 0;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 10px;
+        margin-top: 0;
+    }
+    
+    .navbar {
+        height: auto;
+        padding: 8px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .logo {
+        margin-left: 0;
+        font-size: 12px;
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu {
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+        order: 2;
+    }
+    
+    .menu li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .menu li a {
+        font-size: 7pt;
+    }
+    
+    #Home {
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 30px 15px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .PlaceHolder {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .text {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .text h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .text h4 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .text p {
+        font-size: 12px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    #hats, #Hats {
+        width: 80px;
+        height: 35px;
+        font-size: 10px;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    
+    #About {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 30px 15px;
+        margin: 0;
+    }
+    
+    .JstDVagain {
+        margin-left: 0;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .user {
+        width: 90%;
+        max-width: 100%;
+        text-align: center;
+        padding: 15px;
+        line-height: 1.6;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .user h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .user h5 {
+        font-size: 12px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    #User {
+        width: 120px;
+        height: 40px;
+        font-size: 10px;
+    }
+    
+    #Services {
+        width: 100%;
+        height: auto;
+        padding: 30px 15px;
+        margin: 0;
+    }
+    
+    .datagen {
+        width: 90vw;
+        height: auto;
+        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    .datagen h3 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .datagen h6, .datagen h5 {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .nomatterhowfar {
+        height: auto;
+        width: 100%;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    
+    .HeComes {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nepy {
+        width: 40px;
+        height: 40px;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+    
+    #Portfolio {
+        height: auto;
+        width: 100%;
+        padding: 30px 15px;
+        margin: 0;
+    }
+    
+    .seed {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    .seed h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .growth {
+        width: 100%;
+        grid-template-columns: repeat(3, auto);
+        margin-top: 20px;
+    }
+    
+    .remains {
+        grid-template-columns: repeat(1, auto);
+        width: 90%;
+        margin: 0 auto;
+        justify-items: center;
+    }
+    
+    .Niko {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    
+    #Client {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 30px 15px;
+        margin: 0;
+    }
+    
+    .shopkeeper {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .shopkeeper h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .shopkeeper h6 {
+        font-size: 12px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+    }
+    
+    .left {
+        width: 100%;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    
+    .yeahh {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .huh {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    
+    #Contact {
+        height: auto;
+        width: 100%;
+        padding: 30px 15px;
+        margin: 0;
+    }
+    
+    .communication {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    
+    .communication h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .communication h6 {
+        font-size: 12px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    
+    .input-button-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .communication input {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+    }
+    
+    #idrkman {
+        width: 100%;
+        padding: 10px;
+    }
+}

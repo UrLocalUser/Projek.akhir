@@ -1,0 +1,28 @@
+body { 
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.HJD {
+    background: linear-gradient(180deg, rgb(98, 123, 222), rgb(181, 141, 255));
+    width: 800px;
+    height: 250px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 230px;
+    margin-top: 50px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    color: blue;
+    width: 190px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

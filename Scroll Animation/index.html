@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animasi</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Something idrk</h1>
+    <div class="box"><img src="Sob.jpg"></div>
+    <div class="box"><h2>Songs Maybe</h2></div>
+    <div class="box"><img src="Cute2.jpg"></div>
+    <div class="box"><h2>Static</h2></div>
+    <div class="box"><img src="img03.jpg"></div>
+    <div class="box"><h2>Retry Now!</h2></div>
+    <div class="box"><img src="img01.jpg"></div>
+    <div class="box"><h2>Monitoring</h2></div>
+    <div class="box"><img src="img02.jpg"></div>
+    <div class="box"><h2>WetherGirl</h2></div>
+    <div class="box"><img src="img04.webp"></div>
+    <div class="box"><h2>PPPPP</h2></div>
+    <div class="box"><h2>No more images i ran out >:C</h2></div>
+    <div class="box"><h2>Flop Era</h2></div>
+    <div class="box"><h2>This block is blue :P</h2></div>
+    <div class="box"><h2>Telepathy</h2></div>
+    <div class="box"><h2>:D</h2></div>
+    <div class="box"><h2>Hymm to the dedecant life</h2></div>
+    <div class="box"><h2>:O</h2></div>
+    <div class="box"><h2>TY</h2></div>
+
+    <script>
+        const boxes = document.querySelectorAll('.box');
+
+        window.addEventListener('scroll',checkBoxes)
+
+        checkBoxes()
+
+        function checkBoxes(){
+            const triggerButton = window.innerHeight / 5 * 4
+
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top
+
+                if(boxTop < triggerButton){
+                    box.classList.add('show')
+                }else{
+                    box.classList.remove('show')
+                }
+        })
+        }
+    </script>
+</body>
+</html>

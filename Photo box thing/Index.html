@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Sep 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bungkus">
+        <div class="navbar">
+        <h2>Foto box Fairy Rachmadhani S</h2>
+        </div>
+        <video src="" id="video" autoplay></video><br>
+        <button id="snap">Take photo</button>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <div class="foto" id="photos">
+
+
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('video');
+        const snapButton = document.getElementById('snap');
+        const canvas = document.getElementById('canvas');
+        const photosDiv = document.getElementById('photos');
+        const context = canvas.getContext('2d');
+
+        navigator.mediaDevices.getUserMedia({video : true})
+        .then(stream => {
+            video.srcObject = stream;
+        })
+        .catch(err =>{
+            console.log('tidak bisa akses camera',err);
+        })
+
+        snapButton.addEventListener('click',()=>{
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const imgData = canvas.toDataURL('image/png');
+            const img = document.createElement('img');
+            img.src = imgData;
+            photosDiv.appendChild(img);
+        });
+        canvas.width = 350;
+        canvas.height = 255;
+
+
+    </script>
+</body>
+</html>

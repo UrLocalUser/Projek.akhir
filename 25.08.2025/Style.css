@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    background-color: rgba(174, 174, 174, 0.816);
+}
+
+.Calculator {
+    background-color: #403d3d;
+    height: 490px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(21, 21, 21, 0.9);
+    width: 300px;
+    margin-left: 38%;
+    margin-top: 2%;
+    border: black;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    height: 30%;
+    border: 1px solid ;
+    box-sizing: border-box;
+    border: none;
+    font-size: 50px;
+}
+
+.buttons {
+    margin-left: 7%;
+    margin-top: 4%;
+}
+
+button {
+    background-color: gray;
+    border: none;
+    width: 70px;
+    height: 47px;
+    margin-top: 5px;
+    border-radius: 5%;
+    margin-left: 10px;
+}
